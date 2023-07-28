@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(181 21 92);;
+}
+nav{
+    font-family: 'Ubuntu',sans-serif ;
+    background-color: black;
+    color: white;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 65px;
+    background-color: black;
+}
+nav ul li{
+    padding:0px 12px;
+}
+.brand img{
+    width: 44px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+.container{
+    min-height: 50vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif ;
+    display: flex;
+    /* flex-direction: column; */
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bottom{
+    color: white;
+    position: sticky;
+    height:100px ;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#progressbar{
+    width: 80vw;
+    cursor: pointer;
+}
+.icons{
+    margin-top: 14px;
+}
+.icons i{
+    cursor: pointer;
+}
+.songlistplay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+}
+div .songitem span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.songitem{
+    border-radius: 5px;
+    height: 50px;
+    width: 120%;
+    display: flex;
+    color: rgb(87, 175, 238);
+    /* background-color: white; */
+    margin:12px -17px;
+    justify-content: space-evenly;
+
+}
+.songitem img{
+    border-radius: 5px;
+}
+span .timestamp{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
